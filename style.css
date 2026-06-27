@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    /*Giup cac the hien thij dung kich thuoc co dinh*/
+}
+
+body {
+    font-family: 'inter', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /*Minh phai dat chieu cao toi thieu 100 view height*/
+}
+
+˝
+
+/*Total Student Card*/
+.students-card {
+    background-color: #fff;
+    padding: 25px 32px;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    display: inline-block;
+    margin: 20px 0;
+    border-left: 5px solid #a00;
+}
+
+.students-card h4 {
+    margin: 0 0 18px 0;
+    font-size: 19px;
+    font-weight: 600;
+    color: #333;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+}
+
+.avatar-stack {
+    display: flex;
+    align-items: center;
+}
+
+.avatar-stack img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 3.5px solid #fefefe;
+    margin-left: -18px;
+    object-fit: cover;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-stack img:first-child {
+    margin-left: 0;
+}
+
+.stats .badge {
+    width: 60px;
+    height: 60px;
+    background-color: #a00;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: -18px;
+    border: 3.5px solid #faf5f5;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*Responsive*/
+@media (max-width: 480px) {
+    .students-card {
+        padding: 18px 24px;
+        border-radius: 14px;
+        border-left-width: 4px;
+    }
+
+    .students-card h4 {
+        margin-bottom: 12px;
+        font-size: 16px;
+    }
+
+    .avatar-stack img {
+        width: 42px;
+        height: 42px;
+        border-width: 2.5px;
+        margin-left: -14px;
+    }
+
+    .stats .badge {
+        width: 46px;
+        height: 46px;
+        font-size: 13px;
+        margin-left: -14px;
+        border-width: 2.5px;
+    }
+}
